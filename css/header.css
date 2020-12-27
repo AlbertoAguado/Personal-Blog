@@ -1,0 +1,44 @@
+
+.blog-header {
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 2rem;
+    align-items: center;
+  }
+  
+  .blog-header h1 {
+    margin:0;
+    color:white;
+    text-shadow: 1px 1px darkslategray;
+  }
+  
+  .blog-header nav ul {
+    list-style: none;
+  }
+  
+  .blog-header nav ul li {
+    margin-left:2rem;
+    font-size:1.25rem;
+  }
+  
+  .blog-header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight:400;
+    text-shadow: 1px 1px darkslategray;
+  }
+
+  header {
+    position: fixed;
+    top:0px;
+    width: 100%;
+  }
+  
+  header nav ul {
+    display: flex;
+  }
+
+  .active {
+    background-color: #4586a8;
+    border-bottom: 2px solid #356782;
+  }

@@ -1,9 +1,5 @@
-
-/*
-@import “./layout”;
-@import “./images”;
-@import “./blog-cards”;
-*/
+@import "header.css";
+@import "footer.css";
 
 
 /*
@@ -41,24 +37,22 @@ Font-Size: 17px;
 
 .blog-header {
   grid-area: header;
-  background-color: #4586a8;
 }
 
 .blog-main {
   grid-area: main;
-  background-color:hsla(0, 100%, 99%,100%);
+  background-color:hsla(0deg, 100%, 99%,1);
+  margin-top:85px;
 }
 
 .blog-sidebar {
   grid-area: sidebar;
-  background-color: #yellow;
   max-width: 300px;
+  margin-top:85px;
 }
 
 .blog-footer {
   grid-area: footer;
-  background-color: hsla(0, 100%, 99%,100%);
-  min-height:150px;
 }
 
 .container {
@@ -71,8 +65,15 @@ Font-Size: 17px;
     "footer";
 }
 
+.blog-sidebar {
+  color:hsla(0deg, 0%, 55%,1);
+}
+
 .blog-sidebar-picture {
   border-bottom:3px solid #FBD266;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-post-subtitle {
