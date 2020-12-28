@@ -39,13 +39,32 @@
   }
 
   .active {
-    background-color: #4586a8;
+    background-color: #34647f;
     border-bottom: 2px solid #356782;
   }
   
 
   @media (max-width: 768px) {
     .navigation-desktop {
-      display:none;
+      position:fixed;
+      top: 85px;
+      left: 0;
+      width:100%;
+      background-color: #1e3948;
     }
-   }
+
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      gap:30px;
+    }
+
+    .blog-header nav ul {
+      padding:0;
+    }
+
+    .blog-header nav ul li {
+      font-size: 1.25rem;
+      margin-left:0;
+    }
+  }

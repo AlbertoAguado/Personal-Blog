@@ -12,33 +12,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-<script>
-var header = document.getElementById('header');
-var oldColor = header.style.backgroundColor;
-
-document.body.addEventListener('scroll', () => {
-	let yPosition = document.body.scrollTop;
-	if (yPosition > 100) {
-  	
-  }
-  else {
-  	
-	}
-})
-</script>
-
 </head>
 <body>
     <div class="post-container">
         
-        <header id="header" class="blog-header">
+        <header id="header" class="blog-header active">
             <!-- <h1>Alberto´s Blog</h1> -->
             <img src="images/logo.svg" alt="My logo">
-            <nav class="navigation-desktop">
+            <nav class="navigation-desktop" role="navigation">
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,7 +31,9 @@ document.body.addEventListener('scroll', () => {
         <section class="post-hero">
 
         </section>
+        
         <main class="post-main">
+            <h1>Alberto´s Blog</h1>
             <article class="blog-post">
                 
                 <h2 class="post-title">Blog Post Title</h2>
@@ -67,9 +54,9 @@ document.body.addEventListener('scroll', () => {
                    
                     
                     <div class="post-author-social">
-                        <a href="#"><img src="images/Twitter.svg" alt=""></a>
-                        <a href="#"><img src="images/Instagram.svg" alt=""></a>
-                        <a href="#"></a><img src="images/Github.svg" alt=""></a>
+                        <a href="#"><img src="images/Twitter.svg" alt="Twitter logo"></a>
+                        <a href="#"><img src="images/Instagram.svg" alt="Instagram logo"></a>
+                        <a href="#"><img src="images/Github.svg" alt="Github logo"></a>
                     </div>
                 </section>
                 
@@ -117,12 +104,12 @@ document.body.addEventListener('scroll', () => {
                 
             </div>
             <div class="blog-footer-right">
-                <a href="#"><img src="images/white_github.png" alt=""></a>
-                <a href="#"><img src="images/white_facebook.png" alt=""></a>
-                <a href="#"><img src="images/white_instagram.png" alt=""></a>
-                <a href="#"><img src="images/white_linkedin.png" alt=""></a>
-                <a href="#"><img src="images/white_twitter.png" alt=""></a>
-                <a href="#"><img src="images/white_vimeo.png" alt=""></a>
+                <a href="#"><img src="images/white_github.png" alt="Github logo"></a>
+                <a href="#"><img src="images/white_facebook.png" alt="Facebook logo"></a>
+                <a href="#"><img src="images/white_instagram.png" alt="Instagram logo"></a>
+                <a href="#"><img src="images/white_linkedin.png" alt="Linkedin logo"></a>
+                <a href="#"><img src="images/white_twitter.png" alt="Twitter logo"></a>
+                <a href="#"><img src="images/white_vimeo.png" alt="Vimeo logo"></a>
             </div>
         </footer>
         

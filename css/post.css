@@ -22,7 +22,7 @@
 }
 
 .post-subtitle {
-  color:gray;
+  color:#666666;
   font-weight:700;
 }
 
@@ -51,8 +51,7 @@
   font-weight: bold;
 }
 .post-author-date {
-  color:gray;
-  font-weight: thiner;
+  color:#666666;
   font-size: 1.25rem;
 }
 
