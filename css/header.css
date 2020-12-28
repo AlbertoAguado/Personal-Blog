@@ -42,3 +42,10 @@
     background-color: #4586a8;
     border-bottom: 2px solid #356782;
   }
+  
+
+  @media (max-width: 768px) {
+    .navigation-desktop {
+      display:none;
+    }
+   }

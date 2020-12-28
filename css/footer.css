@@ -1,4 +1,69 @@
 footer {
     min-height:200px;
     background-color:#12222b;
+    margin-top:3rem;
 }
+
+.blog-footer {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items:center;
+    justify-content:center;
+}
+
+.blog-footer-center {
+    display: flex;
+}
+
+
+.blog-footer-right {
+    display: flex;
+    gap:1.5rem;
+}
+
+.blog-footer-right a img {
+    height:33px;
+    opacity: .85;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form h4{
+    color: #FBD266;
+    font-Family: 'Source Sans Pro', Sans-Serif;
+    text-align: center;
+    font-size:1.1rem;
+    margin-bottom:0.5rem;
+}
+
+.subscribe-form label {
+    color: white;
+    font-Family: 'Source Sans Pro', Sans-Serif;
+}
+
+.subscribe-form input {
+    border-radius:5px;
+    height:2rem;
+}
+
+.subscribe-button {
+    background-color: #FBD266;
+    font-Family: 'Source Sans Pro', Sans-Serif;
+}
+
+@media (max-width: 768px) {
+    .blog-footer {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items:center;
+        justify-content:center;
+    }
+   }

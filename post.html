@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Source+Sans+Pro" rel="stylesheet">
     <!-- Normalize browser styles -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="css/post.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
 <script>
 var header = document.getElementById('header');
@@ -34,7 +34,7 @@ document.body.addEventListener('scroll', () => {
         <header id="header" class="blog-header">
             <!-- <h1>Alberto´s Blog</h1> -->
             <img src="images/logo.svg" alt="My logo">
-            <nav>
+            <nav class="navigation-desktop">
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
@@ -77,7 +77,7 @@ document.body.addEventListener('scroll', () => {
                     
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci blanditiis excepturi totam amet voluptates nihil, fugiat corporis veniam inventore rem soluta itaque eveniet voluptatem deleniti officiis error officia facilis iure!</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, iste et reiciendis a ducimus animi voluptatibus eum tenetur eligendi magnam sit aut? Repellat iure voluptates illo pariatur. Suscipit, voluptatem eius!</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum sapiente ut soluta quos error optio quasi expedita similique? Voluptatibus consectetur unde nostrum cupiditate suscipit quod esse itaque quisquam voluptatem id!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum sapiente ut soluta quos error optio quasi expedita similique? Voluptatibus consectetur unde nostrum cupiditate <strong>suscipit</strong> quod esse itaque quisquam voluptatem id!</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quasi consequatur magni voluptate cupiditate, necessitatibus reprehenderit quam. A beatae quo itaque vero autem aliquam dignissimos facere iste! Ipsa, ducimus eaque!Impedit molestiae quod ex similique, commodi eos praesentium est eaque facilis velit quos ut, voluptas odio architecto exercitationem. Repudiandae hic architecto corporis saepe, voluptatem ad ipsa nisi debitis nostrum! Eveniet?</p>
 
                     <figure>
@@ -86,9 +86,15 @@ document.body.addEventListener('scroll', () => {
                     </figure>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci blanditiis excepturi totam amet voluptates nihil, fugiat corporis veniam inventore rem soluta itaque eveniet voluptatem deleniti officiis error officia facilis iure!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, iste et reiciendis a ducimus animi voluptatibus eum tenetur eligendi magnam sit aut? Repellat iure voluptates illo pariatur. Suscipit, voluptatem eius!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, iste et reiciendis a ducimus animi voluptatibus eum tenetur eligendi magnam sit aut? <em>Repellat iure voluptates illo pariatur.</em> Suscipit, voluptatem eius!</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum sapiente ut soluta quos error optio quasi expedita similique? Voluptatibus consectetur unde nostrum cupiditate suscipit quod esse itaque quisquam voluptatem id!</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quasi consequatur magni voluptate cupiditate, necessitatibus reprehenderit quam. A beatae quo itaque vero autem aliquam dignissimos facere iste! Ipsa, ducimus eaque!Impedit molestiae quod ex similique, commodi eos praesentium est eaque facilis velit quos ut, voluptas odio architecto exercitationem. Repudiandae hic architecto corporis saepe, voluptatem ad ipsa nisi debitis nostrum! Eveniet?</p>
+
+                    <blockquote>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad eligendi dicta et qui sed veritatis iusto perferendis, beatae veniam vitae sapiente quidem quam nulla impedit rem, distinctio <br/>animi consequatur dolore?</p>
+                    </blockquote>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quasi consequatur magni voluptate cupiditate, necessitatibus reprehenderit quam. A beatae quo itaque vero autem aliquam dignissimos facere iste! Ipsa, ducimus eaque!Impedit molestiae quod ex similique, commodi eos praesentium est eaque facilis velit quos ut, voluptas odio architecto exercitationem. Repudiandae hic architecto corporis saepe, voluptatem ad ipsa nisi</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quasi consequatur magni voluptate cupiditate, necessitatibus reprehenderit quam. A beatae quo itaque vero autem aliquam dignissimos facere iste! Ipsa, ducimus eaque!Impedit molestiae quod ex similique, commodi eos praesentium est eaque facilis velit quos ut, voluptas odio architecto exercitationem. Repudiandae hic architecto corporis saepe, voluptatem ad ipsa nisi</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quasi consequatur magni voluptate cupiditate, necessitatibus reprehenderit quam. A beatae quo itaque vero autem aliquam dignissimos facere iste! Ipsa, ducimus eaque!Impedit molestiae quod ex similique, commodi eos praesentium est eaque facilis velit quos ut, voluptas odio architecto exercitationem. Repudiandae hic architecto corporis saepe, voluptatem ad ipsa nisi</p>
 
                 </section>
 
@@ -96,9 +102,28 @@ document.body.addEventListener('scroll', () => {
    
         </main>
 
-
         <footer class="blog-footer">
+            <div class="blog-footer-left">
 
+            </div>
+            <div class="blog-footer-center">
+
+                <form class="subscribe-form" action="">
+                    <h4>Subscribe to the Newsletter</h4>
+                    <input type="text" id="subscribers_name" placeholder="Name:"><br>
+                    <input type="email" id="subscribers_email" placeholder="Email:"><br>
+                    <input class="subscribe-button" type="submit" value="Subscribe">
+                </form>
+                
+            </div>
+            <div class="blog-footer-right">
+                <a href="#"><img src="images/white_github.png" alt=""></a>
+                <a href="#"><img src="images/white_facebook.png" alt=""></a>
+                <a href="#"><img src="images/white_instagram.png" alt=""></a>
+                <a href="#"><img src="images/white_linkedin.png" alt=""></a>
+                <a href="#"><img src="images/white_twitter.png" alt=""></a>
+                <a href="#"><img src="images/white_vimeo.png" alt=""></a>
+            </div>
         </footer>
         
     </div>
